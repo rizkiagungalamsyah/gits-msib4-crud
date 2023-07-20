@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,10 +33,3 @@ Route::post('/category', [CategoryController::class, 'store'])->name('category.s
 Route::delete('/category/{category}', [CategoryController::class, 'destroy'])->name('category.destroy');
 Route::get('/category/{category}/edit', [CategoryController::class, 'edit'])->name('category.edit');
 Route::put('/category/{category}', [CategoryController::class, 'update'])->name('category.update');
-
-Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
-Route::post('/cart', [CartController::class, 'addToCart'])->name('cart.addToCart');
-Route::delete('/cart/{cart}', [CartController::class, 'removeFromCart'])->name('cart.destroy');
-Route::post('/cart/checkout', [CartController::class, 'checkout'])->name('cart.checkout');
-Route::get('/cart/{cart}/edit', [CartController::class, 'editCart'])->name('cart.edit');
-Route::put('/cart/{cart}', [CartController::class, 'updateCart'])->name('cart.update');

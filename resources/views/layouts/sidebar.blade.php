@@ -10,11 +10,6 @@
                  <li>
                      <a href="{{ route('product.index') }}"> <i class="menu-icon fa fa-list"></i>List Product</a>
                  </li>
-
-                 <h3 class="menu-title pl-3">Charts</h3>
-                 <li class="">
-                     <a href="{{ route('cart.index') }}"> <i class="menu-icon fa fa-list"></i>Carts</a>
-                 </li>
              </ul>
          </div>
      </nav>
